@@ -1,0 +1,25 @@
+{
+  "name": "pagerun-jscoverage",
+  "version": "0.9.1",
+  "description": "Get js coverage for pagerun.",
+  "main": "jscoverage",
+  "dependencies": {
+
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yaniswang/pagerun-jscoverage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yaniswang/pagerun-jscoverage/issues"
+  },
+  "keywords": [
+    "pagerun",
+    "jscoverage",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Yanis Wang",
+  "license": "MIT"
+}
