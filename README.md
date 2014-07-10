@@ -6,7 +6,35 @@ It's a plugin for pagerun, you can use it to get js coverage in webpage.
 Config
 =======================
 
-This plugin has no config, just load plugin from npm.
+Sample code:
+
+    pagerun.setConfig({
+        jscoverage: {
+            "beautify" : true,
+            "include" : ['/test\\.js/i']
+        }
+    });
+
+1. beautify : beautify the js code
+2. include
+
+    If not set the value, this plugin will cover all js code.
+
+    You can use 3 modes.
+
+    a. head match : just match head string
+
+        "include" : ['http://test.com/']
+        // match: http://test.com/1.js, http://test.com/2.js, http://test.com/test/3.js
+
+    b. strict match : match all url string
+
+        "include" : ['!http://test.com/test.js']
+        // just match: http://test.com/test.js
+
+    c. regex match : macth by regex
+
+        "include" : ['/test\\.(jpg|gif)/i']
 
 License
 ================
